@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skinfood</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="wrap" class="index">
+    <header id="header">
+      <div class="header-wrap">
+        <h1><a href="#"><span class="blind">SKINFOOD</span></a></h1>
+        <nav id="gnb">
+          <ul class="dep1-left">
+            <li><a href="#">BRAND</a>
+              <ul class="dep2-left">
+                <li><a href="#">Brand Story</a></li>
+                <li><a href="#">Brand Promise</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Social Contribution</a></li>
+                <li><a href="#">Campaign</a></li>
+              </ul>
+            </li>
+            <li><a href="#">INGREDIENTS</a>
+              <ul class="dep2-left">
+                <li><a href="#">Line-up</a></li>
+              </ul>
+            </li>
+            <li><a href="#">PRODUCT</a>
+              <ul class="dep2-left">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Best & New</a></li>
+                <li><a href="#">Vegan</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="dep1-right">
+            <li><a href="#">COMMUNITY</a>
+              <ul class="dep2-right">
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="search-wrap">
+                <button class="search-default">
+                  <i class="ri-search-line"></i>
+                  <span class="blind">검색창</span>
+                </button>
+                <div class="search-box">
+                  <form>
+                     <input type="text" placeholder="Search your SKINFOOD">
+                     <button type="submit" class="search-submit">
+                        <i class="ri-search-line"></i>
+                        <span class="blind">검색하기</span>
+                     </button>
+                  </form>
+               </div>
+              </div>
+            </li>
+            <li>
+              <div class="lang-wrap">
+                <button>
+                  <i class="ri-global-line"></i>
+                  <span class="blind">언어변경</span>
+                </button>
+                <ul>
+                  <li><a href="#">KOR</a></li>
+                  <li><a href="#">ENG</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="main-wrap">
+        <section class="main-visual">
+          <video autoplay muted loop class="main-video" src="./media/main-visual.mp4"></video>
+          <div class="main-txt">
+            <p>Treat your <strong>SKIN</strong> <br> with <strong>FOOD</strong></p>
+            <a href="#" class="discover-btn">Discover</a>
+          </div>
+        </section>
+
+        <section class="main-lineup">
+          <div class="lineup-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="lineup-img">
+                  <img src="img/main-swiper-1.png" alt="carrot">
+                </div>
+                <div class="lineup-txt-left">
+                  <strong>Carrot Carotene</strong>
+                  <p>당근찜 추출법을 통해 화학적 용매 없는 순수한 당근 추출물이 함유되어 <br> 수분, 진정에 효과적인 스킨푸드 최초의 비건 라인</p>
+                  <a href="#" class="viewmore-btn">View more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="lineup-img">
+                  <img src="img/main-swiper-2.PNG" alt="parsley">
+                </div>
+                <div class="lineup-txt-right">
+                  <strong>Pantothenic <br> Water Parsley</strong>
+                  <p>판토텐산이 함유된 미나리 추출물이 순하게 피지와 각질을 <br> 케어해주는 유수분 밸런스 케어에 효과적인 비건 트러블 라인</p>
+                  <a href="#" class="viewmore-btn">View more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="lineup-img">
+                  <img src="img/main-swiper-3.png" alt="acorn">
+                </div>
+                <div class="lineup-txt-right">
+                  <strong>Acorn <br> Pore Peptide</strong>
+                  <p>도토리의 엘라그산 성분이 늘어진 피부 모공을 탱탱하게 잡아주고 <br> 속탄력을 케어하여 피부 속부터 탄탄하게 케어해주는 비건 모공 탄력 라인</p>
+                  <a href="#" class="viewmore-btn">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-control">
+              <div class="swiper-button-prev">
+                <img src="img/scroll-icon-left.svg" alt="prev">
+              </div>
+              <div class="swiper-button-next">
+                <img src="img/scroll-icon-right.svg" alt="next">
+              </div>
+            </div>
+              <div class="swiper-pagination"></div>     
+          </div>
+        </section>
+
+        <section class="sf-story">
+          <div class="story-bg"></div>
+          <div class="scroll-icon">
+            <img src="img/scroll-icon-bottom.svg" alt="scroll">
+          </div>
+            <div class="story-content">
+              <div class="story-title">
+                <h2>Brand Story</h2>
+                <p>‘먹어서 좋은 음식은 피부에도 좋다’ 라는 의미에서 출발한 <br>스킨푸드의 브랜드 스토리.</p>
+              </div>
+              <div class="story-txt">
+                <div class="story-txt-1">
+                  <span></span>
+                  <h3>About us</h3>
+                  <p>맛있는 푸드로 만든 맛있는 화장품이란 모토 아래 <br> 건강한 푸드의 영양을 그대로 담아낸 오리지널 푸드 코스메틱 브랜드입니다.</p>
+                  <span></span>
+                </div>
+                <div class="story-txt-2">
+                  <h3>Since 1957</h3>
+                  <p>스킨푸드에는 60여 년의 역사가 고스란히 담겨 있습니다. <br> 1957년부터 이어진 긴 역사는 스킨푸드의 자회사인 <br> 아이피어리스 연구소로부터 탄생한 제품의 우수성을 상징합니다.</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="sf-promise">
+          <div class="promise-title">
+              <h2>Brand Promise</h2>
+              <p>스킨푸드는 늘 ‘건강한 푸드’에서 아름다움의 답을 찾아왔습니다. <br> 인간, 자연, 동물, 모두와의 공존을 위해 더욱 노력하며 <br> 스킨푸드는 지금도 건강하게 성장하고 있습니다.</p>
+            </div>
+          <div class="promise-content">
+            <div class="promise-swiper">
+              <h2>Brand Promise</h2>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="promise-img">
+                    <img src="img/promise-slide1.jpg" alt="promise 1">
+                  </div>
+                  <div class="promise-txt">
+                    <div class="sub-title">
+                      <span>01</span>
+                      <h3>Superior<br>product</h3>
+                    </div>
+                    <div class="text">
+                      <strong>스킨푸드는 피부에 좋은 푸드를 끊임없이 연구합니다.</strong>
+                      <p>건강한 원료에서 독자적인 성분을 개발하여 조금 더 건강하고 착한 아름다움을 선사하고자 합니다. <br> 사람과 동물, 자연에 좋은 영향을 주는 화장품 개발을 목표로 하며 <br> 조금 느리더라도 바르게, 아름다운 피부를 위해 꼭 필요한 푸드의 힘을 전해드리겠습니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="promise-img">
+                    <img src="img/promise-slide2.png" alt="promise 2">
+                  </div>
+                  <div class="promise-txt">
+                    <div class="sub-title">
+                      <span>02</span>
+                      <h3>For<br>Earth</h3>
+                    </div>
+                    <div class="text">
+                      <strong>비닐 대신 종이 완충재, 테이프 없는 포장 박스, 종이 봉투까지.</strong>
+                      <p>콩 인쇄 및 코팅되지 않은 단상자 적용 등의 착한 친환경 포장으로 지구를 생각합니다. <br> 잘 만들고, 잘 버리기 위한 올바른 분리배출 알림 캠페인 “잘 버렸습니다” 를 통해 <br> 스킨푸드는 처음부터 끝까지 모든 과정에서 지구를 위한 작은 손길을 더합니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="promise-img">
+                    <img src="img/promise-slide3.png" alt="promise 3">
+                  </div>
+                  <div class="promise-txt">
+                    <div class="sub-title">
+                      <span>03</span>
+                      <h3>Social<br>Contribution</h3>
+                    </div>
+                    <div class="text">
+                      <strong>진정성을 더한 지속적인 사회 공헌 활동.</strong>
+                      <p>노인 일자리 창출을 위한 [신이어 마켙 콜라보]와 같은 기부캠페인 [화상 환우 1 for 1 기부], <br> 유자 C 잡티 맑음 라인 원료인 유자의 [한파 피해 농가 기부] 활동을 진행하였습니다. <br> 2020 ~ 2023년 기준 총 23회의 기부를 진행하며 지속적인 사회 공헌을 진행 중입니다.</p>
+                    </div>
+                  </div>
+                </div>  
+              </div>   
+            </div>
+            <div class="swiper-control">
+              <div class="swiper-button-prev">
+                <button>
+                  <img src="img/scroll-icon-left.svg" alt="prev">
+                </button>
+              </div>
+              <div class="swiper-button-next">
+                <button>
+                  <img src="img/scroll-icon-right.svg" alt="next">
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>  
+          </div>
+        </section>
+
+        <section class="sf-product">
+          <div class="product-wrap">
+            <h2>Product</h2>
+            <div class="product-list">
+              <ul>
+                <li>
+                  <div class="product-card">
+                    <strong>Asparagus</strong>
+                    <p>Glutathione spicule Serum</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <strong>Shine Muscat</strong>
+                    <p>Salicylic Acid BHA Toner</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <strong>Yuja C</strong>
+                    <p>Dark Spot Clear Vita Mask</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <strong>Carrot</strong>
+                    <p>Carotene Calming Water Pad</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-card">
+                    <strong>Black Sugar</strong>
+                    <p>Perfect PHA Ampoule</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>            
+        </section>
+        
+        <section class="gradient-block"></section>
+        <section class="flow-banner">
+          <div class="flow-txt">
+            <span>Treat your Skin with Food ⋄ SKINFOOD ⋄ </span>
+            <span>Treat your Skin with Food ⋄ SKINFOOD ⋄ </span>
+            <span>Treat your Skin with Food ⋄ SKINFOOD ⋄ </span>
+            <span>Treat your Skin with Food ⋄ SKINFOOD ⋄ </span>
+          </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-wrap">
+        <div class="footer-top">
+          <a href="#" class="footer-logo"><img src="/img/logo.png" alt="메인페이지로"></a>
+          <div class="family-site">
+            <button>GLOBAL SKINFOOD</button>
+            <ul>
+               <li><a href="#" target="_blank">US</a></li>
+               <li><a href="#" target="_blank">Japan</a></li>
+               <li><a href="#" target="_blank">Hong Kong</a></li>
+               <li><a href="#" target="_blank">Iraq</a></li>
+               <li><a href="#" target="_blank">Turkey</a></li>
+               <li><a href="#" target="_blank">Vietnam</a></li>
+               <li><a href="#" target="_blank">Thailand</a></li>
+               <li><a href="#" target="_blank">Guatemala</a></li>
+               <li><a href="#" target="_blank">Bangladesh</a></li>
+            </ul>
+         </div>   
+         <div class="footer-sns">
+            <a href="#" target="_blank">
+               <span class="blind">youtube</span>
+            </a>
+            <a href="#" target="_blank">
+               <span class="blind">facebook</span>
+            </a>
+            <a href="#" target="_blank">
+               <span class="blind">instagram</span>
+            </a>
+         </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-left">
+            <ul class="footer-menu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">영상정보처리방침</a></li>
+              <li><a href="#">매장안내</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="corp-info">
+              <address>
+                상호 (주)스킨푸드 대표이사 구도곤 Tel 080-012-7878 Fax 02-597-4199 <br>
+                주소 서울특별시 강남구 테헤란로 325, 5층 스킨푸드 <br> 
+                사업자등록번호 125-81-54503 통신사업자번호 제2023-서울강남-06725호 개인정보 보호 책임자 이세희
+              </address>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-partnership">
+              <span>Partnership</span>
+              <p>제휴문의 |  webmaster@theskinfood.com <br>
+                마케팅제휴문의 |  skinfood_S015000@theskinfood.com <br>
+                국내영업 문의 |  byeongwoo@theskinfood.com <br>
+                해외영업 문의 |  overseas@theskinfood.com</p>
+            </div>
+            <div class="footer-contact">
+              <span>Customer Center</span>
+              <strong>080-012-7878</strong>
+              <p>월-목  09:00 - 17:00  |  금  09:00 - 15:00 (점심시간 11:20 ~ 12:20)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
